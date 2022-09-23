@@ -1,0 +1,276 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Open+Sans:wght@400;600&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: rgb(255, 136, 17);
+  /* --first-color-alt: hsl(2, 89%, 53%); */
+  --title-color: hsl(233, 20%, 15%);
+  --text-color: hsl(233, 4%, 35%);
+  --body-color: rgb(255, 255, 255);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Open Sans', sans-serif;
+  --second-font: 'Lemon', cursive;
+  --biggest-font-size: 2.25rem;
+  --normal-font-size: .938rem;
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  overflow: hidden; /* For the animations */
+}
+
+/*====================================*/
+
+/* .home {
+  height: 97vh;
+} */
+
+.container__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+}
+
+.home__header {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.home__logo {
+  width: 150px;
+  margin-right: 1rem;
+}
+
+.home__title {
+  margin-top: 2.5rem;
+  font-family: var(--second-font);
+}
+
+.home__title span {
+  color: var(--first-color);
+}
+
+.home__description {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.home__images {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.home__images img{
+
+  /* padding-left: -2rem; */
+  /* padding-right: -2rem; */
+  
+  width: 190px;
+}
+
+.home__input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.email__input {
+  height: 2.9rem;
+  border-radius: 0.3rem;
+  border: solid 0.19rem;
+
+  padding-left: 0.5rem;
+  width: 90%;
+  /* width: 200px; */
+}
+
+.home__button {
+  margin-top: 1rem;
+  text-align: center;
+  width: 90%;
+  font-weight: 600;
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  transition: background 0.3s ease-out;
+}
+
+.home__button.active {
+  background-color: rgb(20, 223, 81);
+}
+
+.middle__container {
+  margin-top: 1rem;
+  /* margin-bottom: 1rem; */
+  color: var(--title-color);
+  font-family: var(--second-font);
+}
+
+.facebook__container h3{
+  text-decoration: underline;
+  color: var(--first-color);
+}
+
+.facebook__logo {
+  font-size: 3rem;
+  color: rgb(66, 103, 178);
+}
+
+
+@media screen and (min-width: 767px) {
+  .home__container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .home__container {
+    position: relative;
+    padding: 5rem 0 2rem;
+  }
+
+  /* .first__container {
+    display: flex;
+    flex-direction: column;
+  } */
+
+
+  .home__header {
+    display: flex;
+    flex-direction: column;
+  }
+  .home__logo {
+    order: 1;
+  }
+  .home__title {
+    order: 2;
+  }
+  .home__description {
+    text-align: center;
+    /* justify-content: center; */
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  .home__container {
+    padding: 3rem 0 2rem;
+  }
+
+  .first__container {
+    padding-top: 0rem;
+    padding-right: 5rem;
+  }
+
+  .second__container {
+    font-size: 1.1rem;
+    padding-top: 5.5rem;
+  }
+
+  .home__logo {
+    width: 300px;
+  }
+
+  .home__title {
+    font-size: 2rem;
+  }
+
+  .home__description {
+    font-size: 1.2rem;
+  }
+  /* .home__header {
+    width: 30%;
+  } */
+}
+
+@media screen and (min-width: 1440px) {
+
+  .home__container {
+    padding: 3rem 0 2rem;
+  }
+
+  .first__container {
+    width: 60%;
+    /* padding-right: 10rem; */
+  }
+
+  .second__container {
+    font-size: 1.1rem;
+    padding-top: 5.5rem;
+  }
+
+  .home__logo {
+    width: 400px;
+  }
+
+  .home__title {
+    margin-top: 2.8rem;
+    font-size: 4rem;
+  }
+
+  .home__description {
+    margin-top: 3rem;
+    font-size: 1.6rem;
+  }
+
+  .home__images img {
+    width: 350px;
+  }
+
+  .home__input input {
+    font-size: 1.4rem;
+  }
+
+
+
+  .facebook__container h3,
+  .home__button {
+    font-size: 1.6rem;
+  }
+  /* .home__header {
+    width: 30%;
+  } */
+}
+
+@media screen and (min-width: 1920px) {
+  .home__container {
+    padding: 8rem 0 2rem;
+  }
+}

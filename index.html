@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>StreetLess</title>
+</head>
+<body>
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home">
+            
+            <div class="container home__container">
+
+                <div class="first__container">
+                    <div class="home__header">
+                        <h1 class="home__title">
+                            Aidons les plus <span class="">démunis</span>
+                        </h1>
+                        <img src="assets/pathds.png" alt="" class="home__logo">
+                    </div>
+
+                    <div class="home__description">
+                        <p>
+                            Streetless est mis place pour permettre 
+                            aux personnes sans domicile fixe sans 
+                            emploi de se réinsérer.
+                            Notre principal idée est de permettre aux 
+                            retraités ou tout autre personne ayant de
+                            l'expérience dans un domaine et voulant la 
+                            partager de pouvoir le faire. 
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="second__container">
+                    <div class="home__images container__center">
+                        <img src="assets/helping-hands.png" alt="" id="image-1" class="home__image">
+                        <img src="assets/helping-old-man.png" alt="" id="image-2" class="home__image">
+                    </div>
+                    
+                    <div class="home__footer">
+                        <div class="home__input">
+                            <input id="email" type="text" placeholder="Votre email" class="email__input">
+                            <a class="home__button" id="button" onclick="newsletter()">
+                                S'inscrire à la newsletter
+                            </a>
+                        </div>
+
+                        <div class="container__center middle__container">
+                            <h2>et / ou</h2>
+                        </div>
+                        
+
+                        <a class="container__center facebook__container" href="https://www.facebook.com/">
+                            <h3>Rejoignez notre page facebook!</h3>
+                            <i class="facebook__logo ri-facebook-box-fill"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+           
+
+
+        
+        </section>
+
+        <!-- <div class="blur"></div> -->
+    </main>
+
+    <!--=============== EmailJS ===============-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+
+    <!--=============== GSAP ===============-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+    
+</body>
+</html>
